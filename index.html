@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Facundo Canessa, Facundo Recagno y Lautaro Sarmiento">
+    <title>Uruguay Concursa</title>
+    <link rel="shortcut icon" href="assets/img/Flag-map_of_Uruguay.ico" type="image/x-icon" />
+    <link rel="preload" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preload" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <header id="header" class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Uruguay<span class="logo__bold">Concursa</span></h1>
+                </a>
+                
+                <nav class="navegacion">
+                    <a href="#inicio" class="navegacion__enlace boton__inicio ">Inicio</a>
+                    <a href="#llamados" class="navegacion__enlace">Llamados</a>                   
+                    <a href="#novedades" class="navegacion__enlace">Novedades</a>
+                    <a href="#contactos" class="navegacion__enlace">Contactos</a>
+                    <a href="#FAQ" class="navegacion__enlace">FAQ</a>
+                    <a href="#registrarse" class="navegacion__enlace ">Registrarse</a>
+                </nav>
+            </div>
+        </div>   
+    </header>
+    <section  id="inicio" class="inicio">
+        <div id="menu" class="main__texto">
+            <h1 class="no-margin texto__principal">Oportunidades que se adaptan a tu vocación</h2>
+            <p class="no-margin texto__secundario">Ofertas de trabajo inclusivas y colaborativas, oportunidades de desarrollo profesional y un ambiente para crecer y prosperar.</p>
+            <input class="boton" type="submit" value="¡Comenzar Ahora!">
+        </div>
+        <div id="EfectoCarrusel" class="carousel slide">
+
+            <!-- Indicadores-->
+            <ul class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+            </ul>
+
+            <!-- Desplazamineto de imágenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/trabajo.png" alt="Interior design 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/trabajo2.png" alt="Interior design 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/trabajo3.png" alt="Interior design 3">
+                </div>
+            </div>
+
+            <!-- Controles de derecha e izquierda -->
+            <a class="carousel-control-prev" href="#EfectoCarrusel">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#EfectoCarrusel">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <section class="llamados" id="llamados">
+        <div class="texto__llamados">
+            <h2 class="titulo__llamados logo__bold">Llamados</h2>
+            <p>En esta sección podrás ver los llamados más recientes e inscribirte a cada uno de ellos, dejando tus datos, para que luego se puedan contactar contigo y así programar una entrevista.</p>
+        </div>
+        <div class="cajas__llamados">
+            <div class="llamado">
+                <img class="img__llamados__microsoft"src="assets/img/Microsoft.png" alt="">
+                <h3 class="logo__bold">Microsoft</h3>
+                <p>Programador SR con experiencia</p>
+                <p>Periodo de postulación:</p>
+                <p> 12/10/2023 - 11/11/23</p>
+                <button onclick="location.href='https://www.microsoft.com/es-es'" class="boton__postularse">Postularse</button>
+            </div>
+            <div class="llamado">
+                <img class="img__llamados__google"src="assets/img/google.png" alt="">
+                <h3 class="logo__bold">Google</h3>
+                <p>Google Ads Specialist</p>
+                <p>Periodo de postulación:</p>
+                <p> 16/10/2023 - 04/11/23</p>
+                <button onclick="location.href='https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwipuYKx8I-CAxUXALkGHao0ApYQPAgJ'" class="boton__postularse">Postularse</button>
+            </div>
+            <div class="llamado">
+                <img class="img__llamados__google"src="assets/img/apple.png" alt="">
+                <h3 class="logo__bold">Apple</h3>
+                <p>Técnico JR</p>
+                <p>Periodo de postulación:</p>
+                <p> 16/10/2023 - 04/01/24</p>
+                <button onclick="location.href='https://www.apple.com/la/'" class="boton__postularse">Postularse</button>
+            </div>
+            <div class="llamado">
+                <img class="img__llamados__google"src="assets/img/tesla.png" alt="">
+                <h3 class="logo__bold">Tesla</h3>
+                <p>Técnico Programador</p>
+                <p>Periodo de postulación:</p>
+                <p> 19/10/2023 - 06/11/23</p>
+                <button onclick="location.href='https://www.tesla.com/es_es'" class="boton__postularse">Postularse</button>
+        </div>
+    </section>  
+    <section id="novedades" class="section__novedades">
+        <div class="div__novedades">
+            <div class="novedad">
+                <div class="div__novedades1">
+                    <img class="icono1"src="assets/img/icono1.png" alt="">
+                    <h3 class="logo__bold texto__novedades">Cursos de coworking</h3> 
+                    <div class="texto__novedades2">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h4>
+                        <input class="boton" type="submit" value="Saber Más">
+                    </div>
+                    
+               </div>
+            </div>
+            <div class="novedad">
+                <div class="div__novedades2">
+                    <img class="icono1" src="assets/img/icono2.png" alt="">
+                    <h3 class="logo__bold texto__novedades">Apoyo a tu Pymes</h3>
+                    <div class="texto__novedades2">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h4>
+                        <input class="boton" type="submit" value="Saber Más">
+                    </div>
+                </div>
+            </div>
+            <div class="novedad">
+                <div class="div__novedades3">
+                    <img class="icono1" src="assets/img/icono3.png" alt="">
+                    <h3 class="logo__bold texto__novedades">Potencia tu talento</h3>
+                    <div class="texto__novedades2">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h4>
+                        <input class="boton" type="submit" value="Saber Más">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactos" id="contactos">
+        <div class="numeros">
+            <h1 class="h1__contactos">Contactos:</h1>
+            <img class="img__whatsapp" src="assets/img/whatsapp.png" alt="">Whatsapp
+            <p class="p__contactos">+598 99999999</p>
+            <img class="img__contactos" src="assets/img/instagram.png" alt="">Instagram
+            <p class="p__contactos">UruguayConcursa.uy</p>
+            <img class="img__contactos" src="assets/img/facebook.png" alt="">Facebook
+            <p class="p__contactos">UruguayConcursa.uy</p>
+            <img class="img__contactos" src="assets/img/mail.png" alt="">Mail
+            <p class="p__contactos">UruguayConcursa@gmail.com.uy</p>
+            <img class="img__contactos" src="assets/img/casa.png" alt="">Dirección
+            <p class="p__contactos">Av. 18 de Julio 1234</p>
+        </div>
+        <div class="form">
+            <article class="formulario" id="formulario">
+                <div class="titulo"></div>
+                <h2>¡CONTÁCTANOS!</h2>
+                     <form action="registros.php" method="post">
+                    <!-- El método HTTP POST envía datos al servidor.  -->
+                        <div>
+                        <label>Nombre Completo</label>
+                        <input  type="text"
+                                id="nombre"
+                                name="nombre"
+                                minlength="6"
+                                maxlength="30"
+                                onkeydown="noEspacios(event)"
+                                placeholder="Nombre Completo"
+                                required>
+                            </div>
+                            <div>
+                        <label>Email</label>
+                        <input type="email"
+                                id="email"
+                                name="email"
+                                onkeydown="noEspacios(event)"
+                                placeholder="juanperez@gmail.com"
+                                required>
+                            </div>
+                            <div>
+                        <label>Celular</label>
+                        <input type="tel"
+                                id="tel"
+                                name="tel"
+                                minlength="9"
+                                maxlength="9"
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                onkeydown="noEspacios(event)"
+                                placeholder="+598"
+                                required>
+                            </div>
+                        <label>Mensaje</label>
+                        <textarea id="comentario" placeholder="Mensaje"></textarea>
+                        
+                    <div class="botones">
+                        <button id="clave1" type="submit">Enviar</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+                </article>  
+            </div>
+    </section>
+    <section id="registrarse">
+        <article class="texto">
+        <div class="informacion">
+            <div class="localizacion">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg>
+              <p class="logo__bold">Localización:</p>
+              <p>Uruguay, Montevideo, Juncal 1511 - 2915 2020</p>
+            </div> 
+            <div class="email">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                    <path d="M3 7l9 6l9 -6" />
+                  </svg>
+                  <p class="logo__bold">Email:</p>
+                  <p>UruguayConcursa@gmail.com</p>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                  </svg>
+                  <p class="logo__bold">Teléfono:</p>
+                  <p>(+598) 2915 2020</p>
+            </div>
+        </div>
+        </article>
+    
+        <article id="formulario">
+    
+            <form class="form" action="registros.php" method="post">
+            <!-- El método HTTP POST envía datos al servidor.  -->
+                
+                <label>Nombre y Apellido</label>
+                <input  type="text"
+                        id="nombre"
+                        name="nombre"
+                        minlength="6"
+                        maxlength="30"
+                        onkeydown="noEspacios(event)"
+                        placeholder="Ingrese su nombre y apellido"
+                        required>
+                            
+                <label>Correo Eléctronico</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       onkeydown="noEspacios(event)"
+                       placeholder="juanperez@gmail.com"
+                       required>
+    
+                <label>Celular</label>
+                <input type="tel"
+                       id="tel"
+                       name="tel"
+                       minlength="9"
+                       maxlength="9   "
+                       oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                       onkeydown="noEspacios(event)"
+                       placeholder="099 999 999"
+                       required>
+                
+                <label>Cédula de Identidad</label>
+                <input type=""
+                       id="cedula"
+                       name="cedula"
+                       placeholder="Ingrese su cédula sin puntos ni guiones"
+                       required>
+    
+            <div style="display:flex; flex-direction:row;">
+                <input type="checkbox"
+                       id="terminos"
+                       name="terminos"
+                       required>
+                <label>Aceptar términos y condiciones</label> 
+            </div>
+    
+            <div class="botones">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+        </article>
+        <script src="jsc/scriptForm.js"></script>
+        <script src="jsc/mostrarPic.js"></script>
+    </section> 
+    <section id="FAQ">
+            <h1 class="title">Preguntas Frecuentes</h1>
+            <div class="faq">
+                <div class="preguntas">
+                    <h1>¿Como subir una oferta?</h1>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path
+                        d="M3 3L21 21L39 3"
+                        stroke="black"
+                        stroke-width="7"
+                        stroke-linecap="roud"
+                        />
+                    </svg>
+                </div>
+                <div class="respuestas">
+                    <p>Para subir una oferta de trabajo debes ir a la sección de llamados, la cuál se encuentra en la parte superior de la pantalla, en donde encontrarás un botón con el texto "Publicar llamado" el cuál te llevará a esa sección. Luego de eso debes de seguir los pasos y listo.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="preguntas">
+                    <h1>¿Métodos de pago?</h1>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path
+                        d="M3 3L21 21L39 3"
+                        stroke="black"
+                        stroke-width="7"
+                        stroke-linecap="roud"
+                        />
+                    </svg>
+                </div>
+                <div class="respuestas">
+                    <p>Aceptamos Mercado Pago, Visa, Mastercard, Santander, American Express, Paypal, Red Pagos y Abitab.</p>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <div class="preguntas">
+                    <h1>¿Como registrarte?</h1>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path
+                        d="M3 3L21 21L39 3"
+                        stroke="black"
+                        stroke-width="7"
+                        stroke-linecap="roud"
+                        />
+                    </svg>
+                </div>
+                <div class="respuestas">
+                    <p>Ingresas a la sección registrarse, la cuál se encuentra en la parte de arriba a la derecha de tu pantalla, dónde se te pedirán tus datos para poder realizar el registro. Luego de ingresados los datos presionas el botón enviar, y está listo.
+                    </p>
+                </div>
+            </div>
+            <script src="assets/js/scripts.js"></script>
+    </section>
+    <footer class="derechos">
+        <p class="logo__nombre"><span class="logo__bold">©</span>Uruguay Concursa. Todos los derechos reservados.</p>
+    </footer>
+     <script>
+        $(document).ready(function () {
+            // Activar carrusel
+            $("#EfectoCarrusel").carousel();
+
+            // Activar los indicadores del carrusel
+            $(".item1").click(function () {
+                $("#EfectoCarrusel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#EfectoCarrusel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#EfectoCarrusel").carousel(2);
+            });
+
+            // Activar dirección del carrusel
+            $(".carousel-control-prev").click(function () {
+                $("#EfectoCarrusel").carousel("prev");
+            });
+            $(".carousel-control-next").click(function () {
+                $("#EfectoCarrusel").carousel("next");
+            });
+        });
+    </script>
+    
+</body>
+</html>
